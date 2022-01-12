@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --very-dark-blue-main-bg: hsl(217, 54%, 11%);
+  --very-dark-blue-card-bg: hsl(216, 50%, 16%);
+  --very-dark-blue-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  font-size: 18px;
+  font-family: 'Outfit', sans-serif;
+  background: var(--very-dark-blue-main-bg);
+}
+
+.card {
+  max-width: 310px;
+  margin: 5% auto;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 20px 20px 10px 20px;
+  color: var(--white);
+  background: var(--very-dark-blue-card-bg);
+}
+
+#img-section {
+  background-image: url('images/image-equilibrium.jpg');
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+#img-section:hover {
+  cursor: pointer;
+  background-image: linear-gradient(
+      rgba(39, 245, 228, 0.27),
+      rgba(39, 190, 245, 0.377)
+    ),
+    url('images/image-equilibrium.jpg');
+}
+
+#img-section img {
+  margin: 40%;
+  display: none;
+}
+
+#img-section img:hover {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--cyan);
+}
+
+.header-text {
+  color: var(--soft-blue);
+  max-width: 300px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.pricing-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 20px 0;
+}
+
+#priceText {
+  color: var(--cyan);
+  display: flex;
+}
+
+#priceText img {
+  align-self: center;
+  margin-right: 8px;
+}
+
+#daysLeftText {
+  color: var(--soft-blue);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#daysLeftText img {
+  margin-right: 8px;
+}
+
+hr {
+  border: 0.01px solid var(--soft-blue);
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  justify-content: center;
+  align-items: center;
+}
+
+footer img {
+  width: 30px;
+  height: auto;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+}
+
+#footerText {
+  color: var(--soft-blue);
+}
+
+#footerAuthor {
+  color: var(--white);
+}
+
+@media only screen and (max-width: 375px) {
+}
+
+@media only screen and (max-width: 1440px) {
+}

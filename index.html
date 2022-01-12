@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        color: #fff;
+      }
+      .attribution a {
+        color: hsl(228, 15%, 69%);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="card">
+      <section id="img-section">
+        <img src="images/icon-view.svg" alt="view" id="eyeImage" />
+      </section>
+      <header class="header">
+        <h2><a href="#"> Equilibrium #3429</a></h2>
+      </header>
+      <article class="header-text">
+        Our Equilibrium collection promotes balance and calm.
+      </article>
+      <section class="pricing-section">
+        <span id="priceText"
+          ><img src="images/icon-ethereum.svg" alt="ethereum" /> 0.041 ETH
+        </span>
+        <span id="daysLeftText">
+          <img src="images/icon-clock.svg" alt="ethereum" />
+          3 days left
+        </span>
+      </section>
+      <hr />
+      <footer class="bottom-section">
+        <img src="images/image-avatar.png" alt="avatar" />
+        <p>
+          <span id="footerText">Creation of </span>
+          <span id="footerAuthor"><a href="#">Jules Wyvern</a> </span>
+        </p>
+      </footer>
+    </section>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Daniel Peon</a>.
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>

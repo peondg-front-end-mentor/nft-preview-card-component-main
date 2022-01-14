@@ -44,11 +44,12 @@ body {
 
 #img-section img {
   margin: 40%;
-  display: none;
+  position: relative;
+  opacity: 0;
 }
 
 #img-section img:hover {
-  display: block;
+  opacity: 100%;
 }
 
 .hide {
